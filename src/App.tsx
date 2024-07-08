@@ -1,24 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import { Button as ButtonV1 } from "tsrnspikerolluppackage/components";
+import { Button as ButtonV2 } from "tsrnspikerolluppackage/components/v2";
+import { Button as ButtonV3 } from "tsrnspikerolluppackage/components/v3";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ButtonV1>ConsumerTS V1</ButtonV1>
+      <ButtonV2>ConsumerTS V2</ButtonV2>
+      <ButtonV3>ConsumerTS V3</ButtonV3>
     </div>
   );
 }
